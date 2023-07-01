@@ -537,6 +537,19 @@
     FoodPineappleSlice: 5
 
 - type: microwaveMealRecipe
+  id: RecipePepperoniPizza
+  name: Pepperoni pizza recipe
+  result: FoodPizzaPepperoni
+  time: 30
+  reagents:
+    OilOlive: 5
+    Blackpepper: 5
+  solids:
+    FoodDough: 1
+    FoodMeat: 2
+    FoodCheeseSlice: 1
+
+- type: microwaveMealRecipe
   id: RecipeDankPizza
   name: dank pizza recipe
   result: FoodPizzaDank

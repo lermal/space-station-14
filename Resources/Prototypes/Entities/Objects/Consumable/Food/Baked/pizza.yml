@@ -403,6 +403,43 @@
     - state: pineapple-slice
 # Tastes like crust, tomato, cheese, pineapple, ham.
 
+- type: entity
+  name: Pepperoni pizza
+  parent: FoodPizzaBase
+  id: FoodPizzaPepperoni
+  description: A spicy variety of Italian-American salami
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - cheesy
+      - oily
+      - bread
+      - spicy
+  - type: Sprite
+    layers:
+    - state: pepperoni
+  - type: SliceableFood
+    slice: FoodPizzaPepperoniSlice
+
+- type: entity
+  name: slice of pepperoni pizza
+  parent: FoodPizzaSliceBase
+  id: FoodPizzaPepperoniSlice
+  description: A slice of pepperoni pizza.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - cheesy
+      - oily
+      - bread
+      - spicy
+  - type: Sprite
+    layers:
+    - state: pepperoni-slice
+# Tastes meaty, cheesy, tomato, oily, spicy and like bread.
+
 #TODO: This is a meme pizza from /tg/. It has specially coded mechanics.
 - type: entity
   name: Arnold's pizza
